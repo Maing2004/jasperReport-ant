@@ -1,0 +1,430 @@
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="HD1" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ee987948-d94b-45fe-b985-ade5a5dc4d40">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="479"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="521"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="mysql connect"/>
+	<query language="SQL"><![CDATA[ select * from  qlsanpham.chitiethoadon,  qlsanpham.hoadon , 
+ qlsanpham.khachhang , qlsanpham.loaisanpham , qlsanpham.nhanvien,
+ qlsanpham.sanpham ]]></query>
+	<field name="MaChiTietHD" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="MaChiTietHD"/>
+		<property name="com.jaspersoft.studio.field.label" value="MaChiTietHD"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="chitiethoadon"/>
+	</field>
+	<field name="MaHD" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="MaHD"/>
+		<property name="com.jaspersoft.studio.field.label" value="MaHD"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="chitiethoadon"/>
+	</field>
+	<field name="IDSanPham" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="IDSanPham"/>
+		<property name="com.jaspersoft.studio.field.label" value="IDSanPham"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="chitiethoadon"/>
+	</field>
+	<field name="SoLuong" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="SoLuong"/>
+		<property name="com.jaspersoft.studio.field.label" value="SoLuong"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="chitiethoadon"/>
+	</field>
+	<field name="ThanhTien" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="ThanhTien"/>
+		<property name="com.jaspersoft.studio.field.label" value="ThanhTien"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="chitiethoadon"/>
+	</field>
+	<field name="GhiChu" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="GhiChu"/>
+		<property name="com.jaspersoft.studio.field.label" value="GhiChu"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="chitiethoadon"/>
+	</field>
+	<field name="COLUMN_7" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="MaHD"/>
+		<property name="com.jaspersoft.studio.field.label" value="MaHD"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hoadon"/>
+	</field>
+	<field name="SoHoaDon" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SoHoaDon"/>
+		<property name="com.jaspersoft.studio.field.label" value="SoHoaDon"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hoadon"/>
+	</field>
+	<field name="NgayTaoHD" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="NgayTaoHD"/>
+		<property name="com.jaspersoft.studio.field.label" value="NgayTaoHD"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hoadon"/>
+	</field>
+	<field name="MaNhanVien" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="MaNhanVien"/>
+		<property name="com.jaspersoft.studio.field.label" value="MaNhanVien"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hoadon"/>
+	</field>
+	<field name="MaKhachHang" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="MaKhachHang"/>
+		<property name="com.jaspersoft.studio.field.label" value="MaKhachHang"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hoadon"/>
+	</field>
+	<field name="TongTien" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="TongTien"/>
+		<property name="com.jaspersoft.studio.field.label" value="TongTien"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hoadon"/>
+	</field>
+	<field name="COLUMN_13" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="GhiChu"/>
+		<property name="com.jaspersoft.studio.field.label" value="GhiChu"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="hoadon"/>
+	</field>
+	<field name="MaKH" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="MaKH"/>
+		<property name="com.jaspersoft.studio.field.label" value="MaKH"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="khachhang"/>
+	</field>
+	<field name="TenKhachHang" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="TenKhachHang"/>
+		<property name="com.jaspersoft.studio.field.label" value="TenKhachHang"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="khachhang"/>
+	</field>
+	<field name="DiaChi" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DiaChi"/>
+		<property name="com.jaspersoft.studio.field.label" value="DiaChi"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="khachhang"/>
+	</field>
+	<field name="GioiTinh" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.name" value="GioiTinh"/>
+		<property name="com.jaspersoft.studio.field.label" value="GioiTinh"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="khachhang"/>
+	</field>
+	<field name="SoDienThoai" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SoDienThoai"/>
+		<property name="com.jaspersoft.studio.field.label" value="SoDienThoai"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="khachhang"/>
+	</field>
+	<field name="LoaiKhachHang" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="LoaiKhachHang"/>
+		<property name="com.jaspersoft.studio.field.label" value="LoaiKhachHang"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="khachhang"/>
+	</field>
+	<field name="COLUMN_20" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="GhiChu"/>
+		<property name="com.jaspersoft.studio.field.label" value="GhiChu"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="khachhang"/>
+	</field>
+	<field name="MaLoaiSP" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="MaLoaiSP"/>
+		<property name="com.jaspersoft.studio.field.label" value="MaLoaiSP"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="loaisanpham"/>
+	</field>
+	<field name="TenLoai" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="TenLoai"/>
+		<property name="com.jaspersoft.studio.field.label" value="TenLoai"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="loaisanpham"/>
+	</field>
+	<field name="MoTa" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="MoTa"/>
+		<property name="com.jaspersoft.studio.field.label" value="MoTa"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="loaisanpham"/>
+	</field>
+	<field name="COLUMN_24" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="MaNhanVien"/>
+		<property name="com.jaspersoft.studio.field.label" value="MaNhanVien"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="nhanvien"/>
+	</field>
+	<field name="TenNhanVien" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="TenNhanVien"/>
+		<property name="com.jaspersoft.studio.field.label" value="TenNhanVien"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="nhanvien"/>
+	</field>
+	<field name="COLUMN_26" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DiaChi"/>
+		<property name="com.jaspersoft.studio.field.label" value="DiaChi"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="nhanvien"/>
+	</field>
+	<field name="COLUMN_27" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SoDienThoai"/>
+		<property name="com.jaspersoft.studio.field.label" value="SoDienThoai"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="nhanvien"/>
+	</field>
+	<field name="COLUMN_28" class="java.lang.Boolean">
+		<property name="com.jaspersoft.studio.field.name" value="GioiTinh"/>
+		<property name="com.jaspersoft.studio.field.label" value="GioiTinh"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="nhanvien"/>
+	</field>
+	<field name="ChucVu" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ChucVu"/>
+		<property name="com.jaspersoft.studio.field.label" value="ChucVu"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="nhanvien"/>
+	</field>
+	<field name="NgaySinh" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="NgaySinh"/>
+		<property name="com.jaspersoft.studio.field.label" value="NgaySinh"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="nhanvien"/>
+	</field>
+	<field name="NgayVaoLam" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="NgayVaoLam"/>
+		<property name="com.jaspersoft.studio.field.label" value="NgayVaoLam"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="nhanvien"/>
+	</field>
+	<field name="COLUMN_32" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="IDSanPham"/>
+		<property name="com.jaspersoft.studio.field.label" value="IDSanPham"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sanpham"/>
+	</field>
+	<field name="MaSP" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="MaSP"/>
+		<property name="com.jaspersoft.studio.field.label" value="MaSP"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sanpham"/>
+	</field>
+	<field name="TenSP" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="TenSP"/>
+		<property name="com.jaspersoft.studio.field.label" value="TenSP"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sanpham"/>
+	</field>
+	<field name="COLUMN_35" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="SoLuong"/>
+		<property name="com.jaspersoft.studio.field.label" value="SoLuong"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sanpham"/>
+	</field>
+	<field name="DonViTinh" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DonViTinh"/>
+		<property name="com.jaspersoft.studio.field.label" value="DonViTinh"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sanpham"/>
+	</field>
+	<field name="GiaNhap" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="GiaNhap"/>
+		<property name="com.jaspersoft.studio.field.label" value="GiaNhap"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sanpham"/>
+	</field>
+	<field name="GiaBan" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="GiaBan"/>
+		<property name="com.jaspersoft.studio.field.label" value="GiaBan"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sanpham"/>
+	</field>
+	<field name="COLUMN_39" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="MaLoaiSP"/>
+		<property name="com.jaspersoft.studio.field.label" value="MaLoaiSP"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sanpham"/>
+	</field>
+	<field name="COLUMN_40" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="MoTa"/>
+		<property name="com.jaspersoft.studio.field.label" value="MoTa"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="sanpham"/>
+	</field>
+	<group name="MaChiTietHD">
+		<expression><![CDATA[$F{MaChiTietHD}]]></expression>
+	</group>
+	<group name="MaHD">
+		<expression><![CDATA[$F{MaHD}]]></expression>
+	</group>
+	<group name="IDSanPham">
+		<expression><![CDATA[$F{IDSanPham}]]></expression>
+	</group>
+	<group name="SoLuong">
+		<expression><![CDATA[$F{SoLuong}]]></expression>
+	</group>
+	<group name="ThanhTien">
+		<expression><![CDATA[$F{ThanhTien}]]></expression>
+	</group>
+	<group name="GhiChu">
+		<expression><![CDATA[$F{GhiChu}]]></expression>
+	</group>
+	<group name="COLUMN_7">
+		<expression><![CDATA[$F{COLUMN_7}]]></expression>
+	</group>
+	<group name="SoHoaDon">
+		<expression><![CDATA[$F{SoHoaDon}]]></expression>
+	</group>
+	<group name="NgayTaoHD">
+		<expression><![CDATA[$F{NgayTaoHD}]]></expression>
+	</group>
+	<group name="MaNhanVien">
+		<expression><![CDATA[$F{MaNhanVien}]]></expression>
+	</group>
+	<group name="MaKhachHang">
+		<expression><![CDATA[$F{MaKhachHang}]]></expression>
+	</group>
+	<group name="TongTien">
+		<expression><![CDATA[$F{TongTien}]]></expression>
+	</group>
+	<group name="COLUMN_13">
+		<expression><![CDATA[$F{COLUMN_13}]]></expression>
+	</group>
+	<group name="MaKH">
+		<expression><![CDATA[$F{MaKH}]]></expression>
+	</group>
+	<group name="TenKhachHang">
+		<expression><![CDATA[$F{TenKhachHang}]]></expression>
+	</group>
+	<group name="DiaChi">
+		<expression><![CDATA[$F{DiaChi}]]></expression>
+	</group>
+	<group name="GioiTinh">
+		<expression><![CDATA[$F{GioiTinh}]]></expression>
+	</group>
+	<group name="SoDienThoai">
+		<expression><![CDATA[$F{SoDienThoai}]]></expression>
+	</group>
+	<group name="LoaiKhachHang">
+		<expression><![CDATA[$F{LoaiKhachHang}]]></expression>
+	</group>
+	<group name="COLUMN_20">
+		<expression><![CDATA[$F{COLUMN_20}]]></expression>
+	</group>
+	<group name="MaLoaiSP">
+		<expression><![CDATA[$F{MaLoaiSP}]]></expression>
+	</group>
+	<group name="TenLoai">
+		<expression><![CDATA[$F{TenLoai}]]></expression>
+	</group>
+	<group name="MoTa">
+		<expression><![CDATA[$F{MoTa}]]></expression>
+	</group>
+	<group name="COLUMN_24">
+		<expression><![CDATA[$F{COLUMN_24}]]></expression>
+	</group>
+	<group name="TenNhanVien">
+		<expression><![CDATA[$F{TenNhanVien}]]></expression>
+	</group>
+	<group name="COLUMN_26">
+		<expression><![CDATA[$F{COLUMN_26}]]></expression>
+	</group>
+	<group name="COLUMN_27">
+		<expression><![CDATA[$F{COLUMN_27}]]></expression>
+	</group>
+	<group name="COLUMN_28">
+		<expression><![CDATA[$F{COLUMN_28}]]></expression>
+	</group>
+	<group name="ChucVu">
+		<expression><![CDATA[$F{ChucVu}]]></expression>
+	</group>
+	<group name="NgaySinh">
+		<expression><![CDATA[$F{NgaySinh}]]></expression>
+	</group>
+	<group name="NgayVaoLam">
+		<expression><![CDATA[$F{NgayVaoLam}]]></expression>
+	</group>
+	<group name="COLUMN_32">
+		<expression><![CDATA[$F{COLUMN_32}]]></expression>
+	</group>
+	<group name="MaSP">
+		<expression><![CDATA[$F{MaSP}]]></expression>
+	</group>
+	<group name="TenSP">
+		<expression><![CDATA[$F{TenSP}]]></expression>
+	</group>
+	<group name="COLUMN_35">
+		<expression><![CDATA[$F{COLUMN_35}]]></expression>
+	</group>
+	<group name="DonViTinh">
+		<expression><![CDATA[$F{DonViTinh}]]></expression>
+	</group>
+	<group name="GiaNhap">
+		<expression><![CDATA[$F{GiaNhap}]]></expression>
+	</group>
+	<group name="GiaBan">
+		<expression><![CDATA[$F{GiaBan}]]></expression>
+	</group>
+	<group name="COLUMN_39">
+		<expression><![CDATA[$F{COLUMN_39}]]></expression>
+	</group>
+	<group name="COLUMN_40">
+		<expression><![CDATA[$F{COLUMN_40}]]></expression>
+	</group>
+	<background splitType="Stretch"/>
+	<title height="79" splitType="Stretch">
+		<element kind="staticText" uuid="d16facf5-85cc-4c01-8e0e-ed6b8af0ed90" x="137" y="30" width="194" height="20" fontName="Cambria" fontSize="14.0" bold="true" hTextAlign="Center">
+			<text><![CDATA[HÓA ĐƠN BÁN HÀNG]]></text>
+		</element>
+	</title>
+	<pageHeader height="125" splitType="Stretch">
+		<element kind="staticText" uuid="01b887eb-f81f-4dbe-af85-aef59674f2a6" x="280" y="37" width="73" height="20">
+			<text><![CDATA[Số điện thoại]]></text>
+		</element>
+		<element kind="staticText" uuid="e842c4a4-e079-4c47-b453-db056762cd53" x="280" y="57" width="73" height="20">
+			<text><![CDATA[Địa chỉ]]></text>
+		</element>
+		<element kind="staticText" uuid="e0d59603-87bb-4885-a3dc-dd4b38dab3ee" x="20" y="17" width="73" height="20">
+			<text><![CDATA[Số hóa đơn]]></text>
+		</element>
+		<element kind="staticText" uuid="51e1b47b-1755-47ed-bc11-28241674aac0" x="20" y="37" width="73" height="20">
+			<text><![CDATA[Ngày tạo]]></text>
+		</element>
+		<element kind="staticText" uuid="5c1af9bd-7ffc-423e-8ebe-63e7397f5986" x="20" y="57" width="73" height="20">
+			<text><![CDATA[Nhân viên]]></text>
+		</element>
+		<element kind="staticText" uuid="61a2acf9-8d37-4beb-8efa-7ebb3abbd706" x="280" y="17" width="73" height="20">
+			<text><![CDATA[Khách hàng]]></text>
+		</element>
+		<element kind="line" uuid="19bbb682-ddbe-4669-bfb4-4715f3df926e" x="-1" y="90" width="553" height="1"/>
+		<element kind="textField" uuid="9e92aa4e-0c4f-4ee6-8c83-68fce7a83a9e" x="100" y="19" width="100" height="18">
+			<expression><![CDATA[$F{MaHD}]]></expression>
+		</element>
+		<element kind="textField" uuid="d4bd52b4-f1da-42fd-9170-1d2d3968d655" x="100" y="37" width="100" height="18">
+			<expression><![CDATA[$F{NgayTaoHD}]]></expression>
+		</element>
+		<element kind="textField" uuid="3b8f94bc-17c1-4f86-a130-84cf00f8396f" x="100" y="58" width="100" height="18">
+			<expression><![CDATA[$F{TenNhanVien}]]></expression>
+		</element>
+		<element kind="textField" uuid="898da216-f3e8-4b51-a8d1-4a71a2deab2b" x="380" y="18" width="100" height="18">
+			<expression><![CDATA[$F{TenKhachHang}]]></expression>
+		</element>
+		<element kind="textField" uuid="54ccb40e-9ee4-429f-98cf-44f3bdf6ff4d" x="380" y="38" width="100" height="18">
+			<expression><![CDATA[$F{SoDienThoai}]]></expression>
+		</element>
+		<element kind="textField" uuid="91315185-191c-4242-acdf-bc883c103dd3" x="380" y="60" width="100" height="18">
+			<expression><![CDATA[$F{DiaChi}]]></expression>
+		</element>
+	</pageHeader>
+	<columnHeader height="85" splitType="Stretch">
+		<element kind="line" uuid="e762bd3e-c749-4c4f-a8d8-375f822a254c" x="10" y="0" width="553" height="1"/>
+		<element kind="staticText" uuid="43bfc09e-ec64-421e-b273-266ceaac96d4" x="5" y="15" width="47" height="20" bold="true" hTextAlign="Center">
+			<text><![CDATA[Mã hàng]]></text>
+		</element>
+		<element kind="staticText" uuid="45feafbc-96df-4fc1-b8a1-bdccac2095cd" x="232" y="15" width="90" height="20" bold="true" hTextAlign="Center">
+			<text><![CDATA[Số lượng]]></text>
+		</element>
+		<element kind="staticText" uuid="5cde6fdb-afeb-4fc8-a495-15b23c6f10c7" x="441" y="15" width="119" height="20" bold="true" hTextAlign="Center">
+			<text><![CDATA[Ghi chú]]></text>
+		</element>
+		<element kind="staticText" uuid="416add44-1a6c-4555-9e0f-fb3d57cdffb7" x="52" y="15" width="90" height="20" bold="true" hTextAlign="Center">
+			<text><![CDATA[Tên hàng]]></text>
+		</element>
+		<element kind="staticText" uuid="c2c627fa-c091-41d0-a874-e42316883d26" x="322" y="15" width="119" height="20" bold="true" hTextAlign="Center">
+			<text><![CDATA[Thành tiền]]></text>
+		</element>
+		<element kind="staticText" uuid="f810e542-cb63-48ab-ac76-375bbf6f1fa4" x="142" y="15" width="90" height="20" bold="true" hTextAlign="Center">
+			<text><![CDATA[Giá bán]]></text>
+		</element>
+		<element kind="textField" uuid="fb345875-0827-4948-81ad-18d4a3c3f78e" x="10" y="40" width="42" height="20">
+			<expression><![CDATA[$F{MaSP}]]></expression>
+		</element>
+		<element kind="textField" uuid="47d38d4e-0f66-4f97-9c13-36d7e6d910d8" x="250" y="40" width="90" height="20">
+			<expression><![CDATA[$F{SoLuong}]]></expression>
+		</element>
+		<element kind="textField" uuid="7c79c5fe-4cfe-400e-8674-993fdfdb7fbc" x="330" y="40" width="119" height="20" pattern="#,##0">
+			<expression><![CDATA[$F{ThanhTien}]]></expression>
+		</element>
+		<element kind="textField" uuid="6958fac1-bef6-4a39-9464-c0dd9d3178fa" x="150" y="40" width="90" height="20" pattern="#,##0">
+			<expression><![CDATA[$F{GiaBan}]]></expression>
+		</element>
+		<element kind="textField" uuid="ae2d13e8-0b5c-4841-9efb-553b36b577ce" x="52" y="40" width="90" height="20">
+			<expression><![CDATA[$F{TenSP}]]></expression>
+		</element>
+		<element kind="textField" uuid="4fbfa3c9-a1b7-45ee-8664-9aa2d2695e5c" x="450" y="40" width="119" height="20">
+			<expression><![CDATA[$F{GhiChu}]]></expression>
+		</element>
+		<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<element kind="line" uuid="dd812d0c-04df-4610-9fb2-3104071d7f0e" x="3" y="0" width="553" height="1"/>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch">
+		<element kind="staticText" uuid="74170772-7d4a-4084-9cf1-487a547f8fad" x="220" y="20" width="100" height="20" hTextAlign="Right">
+			<text><![CDATA[Tổng tiền]]></text>
+		</element>
+		<element kind="textField" uuid="c021566a-8f8c-494b-8b1c-6ece611eb3ca" x="353" y="16" width="135" height="20" pattern="#,##0">
+			<expression><![CDATA[$F{ThanhTien}]]></expression>
+		</element>
+	</columnFooter>
+	<pageFooter height="54" splitType="Stretch"/>
+	<summary height="42" splitType="Stretch"/>
+</jasperReport>
