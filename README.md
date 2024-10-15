@@ -1,3 +1,3 @@
 # jasperReport-ant
-#fix mycode
-#error
+fix mycode
+error
